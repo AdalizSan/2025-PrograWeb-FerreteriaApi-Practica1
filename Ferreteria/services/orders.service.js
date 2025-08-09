@@ -1,4 +1,4 @@
-import { orders } from "../mock-data/orders.js";
+import { orders } from "../mock-data/orders.data.js";
 
 const getAll = () => orders;
 

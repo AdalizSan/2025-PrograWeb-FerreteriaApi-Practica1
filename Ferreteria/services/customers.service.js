@@ -1,4 +1,4 @@
-import { customers } from "../mock-data/customers.js";
+import { customers } from "../mock-data/customers.data.js";
 
 const getAll = () => customers;
 

@@ -1,4 +1,4 @@
-import { suppliers } from "../mock-data/suppliers.js";
+import { suppliers } from "../mock-data/suppliers.data.js";
 
 const getAll = () => suppliers;
 
