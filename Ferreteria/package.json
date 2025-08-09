@@ -1,0 +1,10 @@
+{
+    "name": "ferreteria-api",
+    "version": "1.0.0",
+    "main": "server.js",
+    "type": "module",
+    "license": "MIT",
+    "dependencies": {
+    "express": "^5.1.0"
+    }
+}

@@ -1,0 +1,105 @@
+{
+    "info": {
+    "name": "Ferreteria API Minimal",
+    "_postman_id": "minimal-collection-id",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+    },
+    "item": [
+    {
+        "name": "Products",
+        "item": [
+        {
+            "name": "Get all products",
+            "request": {
+            "method": "GET",
+            "url": "http://localhost:3000/products"
+            }
+        },
+        {
+            "name": "Create product",
+            "request": {
+            "method": "POST",
+            "header": [{ "key": "Content-Type", "value": "application/json" }],
+            "body": {
+                "mode": "raw",
+                "raw": "{\"name\":\"Nuevo Producto\",\"price\":100,\"stock\":50}"
+            },
+            "url": "http://localhost:3000/products"
+            }
+        }
+        ]
+    },
+    {
+        "name": "Customers",
+        "item": [
+        {
+            "name": "Get all customers",
+            "request": {
+            "method": "GET",
+            "url": "http://localhost:3000/customers"
+            }
+        },
+        {
+            "name": "Create customer",
+            "request": {
+            "method": "POST",
+            "header": [{ "key": "Content-Type", "value": "application/json" }],
+            "body": {
+                "mode": "raw",
+                "raw": "{\"name\":\"Nuevo Cliente\",\"email\":\"cliente@example.com\",\"phone\":\"555-1234\"}"
+            },
+            "url": "http://localhost:3000/customers"
+            }
+        }
+        ]
+    },
+    {
+        "name": "Suppliers",
+        "item": [
+        {
+            "name": "Get all suppliers",
+            "request": {
+            "method": "GET",
+            "url": "http://localhost:3000/suppliers"
+        }
+        },
+        {
+            "name": "Create supplier",
+            "request": {
+            "method": "POST",
+            "header": [{ "key": "Content-Type", "value": "application/json" }],
+            "body": {
+                "mode": "raw",
+                "raw": "{\"name\":\"Nuevo Proveedor\",\"phone\":\"444-0000\",\"city\":\"Ciudad Nueva\"}"
+            },
+            "url": "http://localhost:3000/suppliers"
+            }
+        }
+        ]
+    },
+    {
+        "name": "Orders",
+        "item": [
+        {
+            "name": "Get all orders",
+            "request": {
+            "method": "GET",
+            "url": "http://localhost:3000/orders"
+            }
+        },
+        {
+            "name": "Create order",
+            "request": {
+            "method": "POST",
+            "header": [{ "key": "Content-Type", "value": "application/json" }],
+            "body": {
+                "mode": "raw",
+                "raw": "{\"customerId\":1,\"productId\":3,\"quantity\":2,\"total\":2400}"
+            },
+            "url": "http://localhost:3000/orders"
+            }
+        }
+    ]
+}
+]
+}
